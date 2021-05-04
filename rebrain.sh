@@ -1,6 +1,6 @@
-#!/etc/bin/bash
+#!/bin/bash
 
-$p=`ls -l /proc`
-if '$1'=='p';
-then p
+p=`ls -l /proc`
+if [ "$1" = "-p" ];
+then echo "$p"
 fi
